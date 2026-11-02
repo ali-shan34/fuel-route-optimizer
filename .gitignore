@@ -1,0 +1,19 @@
+﻿venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.sqlite3
+.env
+.env.*
+!.env.example
+*.log
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Postman local workspace metadata
+.postman/
+postman/collections/
+postman/globals/
+data/*.zip
