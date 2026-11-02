@@ -70,11 +70,7 @@ class RouteAPIView(APIView):
                 route_distance_miles=route["distance_miles"],
             )
 
-            # Step 5: Find fuel stations near the route.
-            stations = FuelStation.objects.filter(
-                latitude__isnull=False,
-                longitude__isnull=False,
-            )
+            
 
             nearby_stations = find_stations_near_route_fast(
                 route_segments=segments,
