@@ -32,6 +32,24 @@ A Django REST Framework API that calculates driving routes between US locations 
 
 ## Project Setup
 
+### Configure Django Secret Key
+
+Windows PowerShell:
+
+```powershell
+$env:DJANGO_SECRET_KEY = python -c "import secrets; print(secrets.token_urlsafe(50))"
+```
+
+Linux/macOS:
+
+```bash
+export DJANGO_SECRET_KEY="$(python -c 'import secrets; print(secrets.token_urlsafe(50))')"
+```
+
+Generate a secure key before running the application. Do not commit your secret key to GitHub.
+
+
+
 ### 1. Clone the repository
 
 ```bash
