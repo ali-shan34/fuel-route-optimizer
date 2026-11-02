@@ -35,7 +35,7 @@ A Django REST Framework API that calculates driving routes between US locations 
 ### 1. Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/ali-shan34/fuel-route-optimizer.git
 cd fuel-route-optimizer
 ```
 
